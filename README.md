@@ -18,6 +18,27 @@ I'm learning Angular on the go by building a simple blog page.
 I'll keep updating this project and README as I continue learning. 💡
 
 ---
+## 🔧 App Overview
+
+### 🏠 Home Page
+Displays a list of blog posts.
+
+Each post is clickable.
+
+Clicking a post navigates to the Blog Page for detailed view.
+
+### 📝 Add Post Page
+Contains a form built using Reactive Forms.
+
+Allows users to create a new blog post.
+
+Submits the post and adds it to an in-memory shared data source.
+
+### 📄 Blog Page
+Displays the full content of a selected post.
+
+Accessed by clicking a post from the Home Page.
+---
 
 ## ⚙️ Angular CLI Generated Info
 
