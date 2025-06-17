@@ -1,1 +1,6 @@
-<p>home works!</p>
+<div class="post-feed">
+  <div class="post" *ngFor="let post of posts()">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  </div>
+</div>

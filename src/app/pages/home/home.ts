@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, computed} from '@angular/core';
+import { PostService } from '../../services/post';
 
 @Component({
   selector: 'app-home',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class Home {
 
+   
+  posts = computed(() => this.postService.getPosts()); 
+  
+  constructor(private postService:PostService) {
+
+  }
 }

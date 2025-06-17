@@ -1,1 +1,6 @@
-<p>add-post works!</p>
+<!-- add-post.html -->
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="title" placeholder="Title" />
+  <textarea formControlName="content" placeholder="Write your blog..."></textarea>
+  <button type="submit">Post</button>
+</form>

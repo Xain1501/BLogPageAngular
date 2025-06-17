@@ -10,7 +10,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/app/services/post.ts"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]
