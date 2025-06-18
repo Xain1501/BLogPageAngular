@@ -27,9 +27,11 @@ export class AddPost{
         id: Date.now(),
         title: this.postForm.value.title,
         content: this.postForm.value.content,
+        likes:0,
+        comments: []
       };
       this.postService.addPost(newPost);
-      this.router.navigate(['/']);
+      this.router.navigate(['/home']);
     }
   }
 }

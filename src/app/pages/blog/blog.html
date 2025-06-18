@@ -1,1 +1,30 @@
-<p>blog works!</p>
+<div class="blog-container">
+  <div class="blog-post">
+    <h2 class="post-title">{{ post()?.title }}</h2>
+    <p class="post-content">{{ post()?.content }}</p>
+
+    <div class="interactions">
+      <button class="like-btn" (click)="likePost()">
+        ❤️ Like ({{ post()?.likes || 0 }})
+      </button>
+    </div>
+
+    <div class="comment-section">
+      <h3>Comments</h3>
+      <div class="comment" *ngFor="let comment of post()?.comments || []">
+        💬 {{ comment }}
+      </div>
+
+      <div class="comment-input">
+        <input
+          type="text"
+          placeholder="Write a comment..."
+          [value]="commentText()"
+          (input)="commentText.set($any($event.target).value)"
+        />
+        <button (click)="addComment()">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+
