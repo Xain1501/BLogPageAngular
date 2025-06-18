@@ -1,0 +1,36 @@
+.post-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #0a1a3d; // Navy blue background
+  min-height: 100vh;
+}
+
+.post-card {
+  background-color: #ffffff; // White post background
+  border-left: 6px solid #ffd700aa; // Hint of gold
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3); // Soft gold glow on hover
+  }
+
+  .post-title {
+    color: #0a1a3d; // Navy Blue
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .post-content {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
